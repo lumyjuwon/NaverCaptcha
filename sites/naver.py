@@ -26,7 +26,7 @@ class Naver(object):
 
         self.keyboard = WinKeyboard()
 
-    def security_login(self, user_id, user_pw):
+    def clipboard_login(self, user_id, user_pw):
         self.driver.find_element_by_xpath('//*[@id="account"]/div/a/i').click()
         time.sleep(2)
 
