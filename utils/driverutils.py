@@ -14,7 +14,7 @@ class DriverUtils(object):
         # 프레임이 생성되기 전 까지 기다렸다가 생성이 완료 되면 프레임을 옮김
         WebDriverWait(self.driver, explicit_wait_time).until(EC.frame_to_be_available_and_switch_to_it(element))
 
-    def security_input(self, user_xpath, user_input):
+    def clipboard_input(self, user_xpath, user_input):
         pyperclip.copy(user_input)
 
         self.driver.find_element_by_xpath(user_xpath).click()
