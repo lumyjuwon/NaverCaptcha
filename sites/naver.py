@@ -30,8 +30,8 @@ class Naver(object):
         self.driver.find_element_by_xpath('//*[@id="account"]/div/a/i').click()
         time.sleep(2)
 
-        self.driver_utils.security_input('//*[@id="id"]', user_id)
-        self.driver_utils.security_input('//*[@id="pw"]', user_pw)
+        self.driver_utils.clipboard_input('//*[@id="id"]', user_id)
+        self.driver_utils.clipboard_input('//*[@id="pw"]', user_pw)
 
         self.driver.find_element_by_xpath('//*[@id="frmNIDLogin"]/fieldset/input').click()
 

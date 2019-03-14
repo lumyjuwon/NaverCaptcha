@@ -2,7 +2,7 @@ from sites.naver import Naver
 import time
 
 if __name__ == "__main__":
-    naver = Naver('your_id', 'your_pw')
+    naver = Naver('', '')
     try:
         naver.clipboard_login(naver.ID, naver.PW)
     finally:
