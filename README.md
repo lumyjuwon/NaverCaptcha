@@ -8,10 +8,7 @@
     ``` pip install pyperclip ```
   
   * **win32api**  
-    ``` pip install win32api ```  
-    
-  * **win32con**  
-    ``` pip install win32con ```
+    ``` pip install pywin32 ```  
     
  외부 라이브러리 설치가 필요합니다.
  
